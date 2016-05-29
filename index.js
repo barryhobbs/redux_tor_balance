@@ -1,1 +1,8 @@
-document.write("It works too");
+import 'babel-polyfill'
+import React from 'react'
+import { render } from 'react-dom'
+
+render(
+  <p>Hi</p>,
+  document.getElementById('root')
+)
